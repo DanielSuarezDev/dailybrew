@@ -5,6 +5,8 @@ import { SEOHead } from './components/SEOHead';
 import { useAnalytics } from './hooks/useAnalytics';
 import { trackPageView, trackMeetingStart, trackMeetingComplete } from './utils/analytics';
 import { Participant, AppState } from './types';
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   const [appState, setAppState] = useState<AppState>({
@@ -111,6 +113,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <SEOHead {...getSEOProps()} />
+      <Analytics />
       
       {appState.screen === 'welcome' && (
         <WelcomeScreen onStartMeeting={handleStartMeeting} />

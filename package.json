@@ -4,7 +4,15 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Daily Brew - Herramienta interactiva para reuniones diarias con temática de café. Facilita stand-ups y daily meetings con una experiencia visual atractiva.",
-  "keywords": ["daily standup", "scrum", "meetings", "coffee", "team collaboration", "agile", "productivity"],
+  "keywords": [
+    "daily standup",
+    "scrum",
+    "meetings",
+    "coffee",
+    "team collaboration",
+    "agile",
+    "productivity"
+  ],
   "author": "Daily Brew Team",
   "homepage": "https://dailybrew.app",
   "repository": {
@@ -19,6 +27,7 @@
     "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -40,5 +49,6 @@
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2",
     "vite-plugin-pwa": "^0.20.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
